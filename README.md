@@ -12,8 +12,8 @@ Use <a href="https://passninja.com/docs">passninja-cs</a> as an .Net module.</h3
     <a href="https://github.com/flomio/passninja-cs/issues">
         <img alt="Issues" src="https://img.shields.io/github/issues/flomio/passninja-cs.svg" />
     </a>
-    <a href="https://www.npmjs.com/package/@passninja/passninja-cs">
-        <img alt="npm package" src="https://img.shields.io/npm/v/@passninja/passninja-cs.svg?style=flat-square" />
+    <a href="https://www.net.com/package/@passninja/passninja-cs">
+        <img alt=".net package" src="https://img.shields.io/net/v/@passninja/passninja-cs.svg?style=flat-square" />
     </a>
 </div>
 
