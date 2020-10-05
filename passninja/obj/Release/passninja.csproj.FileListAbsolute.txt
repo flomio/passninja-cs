@@ -1,0 +1,11 @@
+E:\Development_WP\PassNinja\passninja\passninja\bin\Release\passninja.dll
+E:\Development_WP\PassNinja\passninja\passninja\bin\Release\passninja.pdb
+E:\Development_WP\PassNinja\passninja\passninja\bin\Release\Newtonsoft.Json.dll
+E:\Development_WP\PassNinja\passninja\passninja\bin\Release\RestSharp.dll
+E:\Development_WP\PassNinja\passninja\passninja\bin\Release\Newtonsoft.Json.xml
+E:\Development_WP\PassNinja\passninja\passninja\bin\Release\RestSharp.xml
+E:\Development_WP\PassNinja\passninja\passninja\obj\Release\passninja.csprojAssemblyReference.cache
+E:\Development_WP\PassNinja\passninja\passninja\obj\Release\passninja.csproj.CoreCompileInputs.cache
+E:\Development_WP\PassNinja\passninja\passninja\obj\Release\passninja.csproj.CopyComplete
+E:\Development_WP\PassNinja\passninja\passninja\obj\Release\passninja.dll
+E:\Development_WP\PassNinja\passninja\passninja\obj\Release\passninja.pdb

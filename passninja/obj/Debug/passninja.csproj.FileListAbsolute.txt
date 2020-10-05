@@ -1,0 +1,10 @@
+E:\Development_WP\PassNinja\passninjajs\passninjajs\bin\Debug\passninja.dll
+E:\Development_WP\PassNinja\passninjajs\passninjajs\bin\Debug\passninja.pdb
+E:\Development_WP\PassNinja\passninjajs\passninjajs\bin\Debug\Newtonsoft.Json.dll
+E:\Development_WP\PassNinja\passninjajs\passninjajs\bin\Debug\RestSharp.dll
+E:\Development_WP\PassNinja\passninjajs\passninjajs\bin\Debug\Newtonsoft.Json.xml
+E:\Development_WP\PassNinja\passninjajs\passninjajs\bin\Debug\RestSharp.xml
+E:\Development_WP\PassNinja\passninjajs\passninjajs\obj\Debug\passninja.csproj.CoreCompileInputs.cache
+E:\Development_WP\PassNinja\passninjajs\passninjajs\obj\Debug\passninja.csproj.CopyComplete
+E:\Development_WP\PassNinja\passninjajs\passninjajs\obj\Debug\passninja.dll
+E:\Development_WP\PassNinja\passninjajs\passninjajs\obj\Debug\passninja.pdb
