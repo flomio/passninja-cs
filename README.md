@@ -12,8 +12,8 @@ Use <a href="https://passninja.com/docs">passninja-cs</a> as an .Net module.</h3
     <a href="https://github.com/flomio/passninja-cs/issues">
         <img alt="Issues" src="https://img.shields.io/github/issues/flomio/passninja-cs.svg" />
     </a>
-    <a href="https://www.net.com/package/@passninja/passninja-cs">
-        <img alt=".net package" src="https://img.shields.io/net/v/@passninja/passninja-cs.svg?style=flat-square" />
+    <a href="https://www.nuget.org/packages/passninja.dll/1.0.0">
+        NuGet
     </a>
 </div>
 
@@ -42,7 +42,7 @@ pip install passninja
 
 This function returns a newly created PassNinjaClient object. Make sure to pass your user credentials to make any authenticated requests. 
 
-```python
+```C#
 using passninja;
 
 private const string AccountId = "90f0629f-2960-4c20-ac8d-d6e6e389ac73";
@@ -57,7 +57,7 @@ through your PassNinja account and don't hesitate to contact
 [PassNinja](https://passninja.com) with our built in chat system if you'd like
 to subscribe and create your own custom pass type(s).
 
-For more information on how to use `passninja-python` once it loads, please refer to
+For more information on how to use `passninja-cs` once it loads, please refer to
 the [PassNinja JS API reference](https://passninja.com/docs/js)
 
 ## `PassNinjaClientMethods`
@@ -66,7 +66,7 @@ This library currently supports methods for creating, getting, updating, and del
 
 ### Create
 
-```python
+```C#
   var createResponse = passNinjaClient.CreatePass("demo.coupon", new PassData()
   {
     discount = "50%",
@@ -81,7 +81,7 @@ This library currently supports methods for creating, getting, updating, and del
 
 ### Get
 
-```python
+```C#
 var getResponse = passNinjaClient.GetPass("demo.coupon", "ed669b28-9b87-485b-8df6-8b04158d53c1");
 
 Console.WriteLine(getResponse.url);             
@@ -91,7 +91,7 @@ Console.WriteLine(getResponse.serialNumber);
 
 ### Update
 
-```python
+```C#
 var putResponse = passNinjaClient.PutPass("demo.coupon", "ed669b28-9b87-485b-8df6-8b04158d53c1", new PassData()
 {
     discount = "50%",
@@ -102,7 +102,7 @@ var putResponse = passNinjaClient.PutPass("demo.coupon", "ed669b28-9b87-485b-8df
 
 ### Delete
 
-```python
+```C#
 var deleteResponse = passNinjaClient.DeletePass("demo.coupon", "e56b4857-5bf6-4829-a6c3-951aee5d3a15");  
 
 Console.WriteLine("Delete Pass response");
