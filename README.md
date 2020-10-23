@@ -30,10 +30,10 @@ Use <a href="https://passninja.com/docs">passninja-cs</a> as an .Net module.</h3
 
 # Installation
 
-Install via pip:
+Install via Package Manager:
 
 ```sh
-pip install passninja
+Install-Package passninja.dll -Version 1.0.0
 ```
 
 # Usage
