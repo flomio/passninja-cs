@@ -154,6 +154,53 @@ namespace passninja
         }
 
         /// <summary>
+        /// Partially update an NFC pass. Only the provided fields are changed;
+        /// unlike PutPass (full replace), omitted fields keep their current values.
+        /// </summary>
+        /// <param name="passType"></param>
+        /// <param name="serialNumber"></param>
+        /// <param name="passData"></param>
+        /// <returns>  Result of patching a NFC pass..</returns>
+        public PassResponseData PatchPass(string passType, string serialNumber, PassData passData)
+        {
+            PassResponseData passResponseData = new PassResponseData();
+            try
+            {
+                if (string.IsNullOrWhiteSpace(passType) || string.IsNullOrWhiteSpace(serialNumber))
+                {
+                    throw new PassNinjaInvalidArgumentsException("Must provide both passType and serialNumber to PassNinjaClient.PatchPass method. PassNinjaClient.PatchPass(passType: string, serialNumber: string, passData: PassData)");
+                }
+
+                List<string> invalidKeys = ExtractInvalidKeys(passData);
+
+                if (invalidKeys.Count > 0)
+                {
+                    throw new PassNinjaInvalidArgumentsException("Invalid templateStrings provided in clientPassData object. Invalid keys: " + string.Join(",", invalidKeys.ToArray()));
+                }
+
+                var postData = new PassRequestData();
+                postData.passTemplate = passType;
+                postData.pass = passData;
+
+                var request = new RestRequest("/passes/" + passType + "/" + serialNumber, Method.PATCH);
+                request.AddJsonBody(postData);
+                IRestResponse response = _client.Execute(request);
+
+                if (response.StatusCode == HttpStatusCode.OK)
+                {
+                    passResponseData = JsonConvert.DeserializeObject<PassResponseData>(response.Content);
+                    if (passResponseData != null)
+                        passResponseData.url = passResponseData.urls?.landing;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return passResponseData;
+        }
+
+        /// <summary>
         ///  Set a currently existing pass to be invalid/inactive. Returns serial_number.
         /// </summary>
         /// <param name="passType"></param>
