@@ -8,7 +8,7 @@ namespace passninja
 {
     public class PassRequestData
     {
-        public string passType { get; set; } 
+        public string passTemplate { get; set; }
         public PassData pass { get; set; }
     }
 }

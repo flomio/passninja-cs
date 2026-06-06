@@ -75,7 +75,7 @@ This library currently supports methods for creating, getting, updating, and del
 
   Console.WriteLine("Create Pass response");
   Console.WriteLine(createResponse.url);
-  Console.WriteLine(createResponse.passType);
+  Console.WriteLine(createResponse.passTemplate);
   Console.WriteLine(createResponse.serialNumber);
 ```
 
@@ -85,7 +85,7 @@ This library currently supports methods for creating, getting, updating, and del
 var getResponse = passNinjaClient.GetPass("demo.coupon", "ed669b28-9b87-485b-8df6-8b04158d53c1");
 
 Console.WriteLine(getResponse.url);             
-Console.WriteLine(getResponse.passType);
+Console.WriteLine(getResponse.passTemplate);
 Console.WriteLine(getResponse.serialNumber);
 ```
 

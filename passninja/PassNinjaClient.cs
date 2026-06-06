@@ -54,7 +54,7 @@ namespace passninja
                 }
 
                 var postData = new PassRequestData();
-                postData.passType = passType;
+                postData.passTemplate = passType;
                 postData.pass = passData;
 
                 var request = new RestRequest("/passes", Method.POST);
@@ -132,7 +132,7 @@ namespace passninja
                 }
 
                 var postData = new PassRequestData();
-                postData.passType = passType;
+                postData.passTemplate = passType;
                 postData.pass = passData;
 
                 var request = new RestRequest("/passes/" + passType + "/" + serialNumber, Method.POST);
