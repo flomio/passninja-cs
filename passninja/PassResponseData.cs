@@ -11,7 +11,7 @@ namespace passninja
         public Urls urls { get; set; }
         public string url { get; set; }
         public string serialNumber { get; set; }
-        public string passType { get; set; }
+        public string passTemplate { get; set; }
         public string message { get; set; }
     }
 }
