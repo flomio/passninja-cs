@@ -135,7 +135,7 @@ namespace passninja
                 postData.passTemplate = passType;
                 postData.pass = passData;
 
-                var request = new RestRequest("/passes/" + passType + "/" + serialNumber, Method.POST);
+                var request = new RestRequest("/passes/" + passType + "/" + serialNumber, Method.PUT);
                 request.AddJsonBody(postData);
                 IRestResponse response = _client.Execute(request);
 
