@@ -1,21 +1,10 @@
-<p align="center">
-    <img width="400px" src=https://user-images.githubusercontent.com/1587270/74537466-25c19e00-4f08-11ea-8cc9-111b6bbf86cc.png>
-</p>
-<h1 align="center">passninja-cs</h1>
-<h3 align="center">
-Use <a href="https://passninja.com/docs">passninja-cs</a> as an .Net module.</h3>
+# passninja-cs
 
-<div align="center">
-    <a href="https://github.com/flomio/passninja-cs">
-        <img alt="Status" src="https://img.shields.io/badge/status-active-success.svg" />
-    </a>
-    <a href="https://github.com/flomio/passninja-cs/issues">
-        <img alt="Issues" src="https://img.shields.io/github/issues/flomio/passninja-cs.svg" />
-    </a>
-    <a href="https://www.nuget.org/packages/passninja">
-        <img alt="NuGet" src="https://img.shields.io/nuget/v/passninja.svg" />
-    </a>
-</div>
+Use [passninja-cs](https://passninja.com/docs) as a .NET module.
+
+[![Status](https://img.shields.io/badge/status-active-success.svg)](https://github.com/flomio/passninja-cs)
+[![Issues](https://img.shields.io/github/issues/flomio/passninja-cs.svg)](https://github.com/flomio/passninja-cs/issues)
+[![NuGet](https://img.shields.io/nuget/v/passninja.svg)](https://www.nuget.org/packages/passninja)
 
 # Contents
 
