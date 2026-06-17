@@ -8,15 +8,20 @@
 
     <!-- NuGet package metadata -->
     <PackageId>passninja</PackageId>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <Authors>PassNinja</Authors>
     <Company>PassNinja</Company>
     <Description>A PassNinja API helper library for C# — create and manage mobile wallet NFC passes (Apple Wallet and Google Wallet).</Description>
     <PackageProjectUrl>https://passninja.com/</PackageProjectUrl>
     <RepositoryUrl>https://github.com/flomio/passninja-cs</RepositoryUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageTags>passninja;nfc;wallet;apple-wallet;google-wallet;passes</PackageTags>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />

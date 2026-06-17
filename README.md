@@ -12,8 +12,8 @@ Use <a href="https://passninja.com/docs">passninja-cs</a> as an .Net module.</h3
     <a href="https://github.com/flomio/passninja-cs/issues">
         <img alt="Issues" src="https://img.shields.io/github/issues/flomio/passninja-cs.svg" />
     </a>
-    <a href="https://www.nuget.org/packages/passninja.dll/1.0.0">
-        NuGet
+    <a href="https://www.nuget.org/packages/passninja">
+        <img alt="NuGet" src="https://img.shields.io/nuget/v/passninja.svg" />
     </a>
 </div>
 
@@ -30,10 +30,16 @@ Use <a href="https://passninja.com/docs">passninja-cs</a> as an .Net module.</h3
 
 # Installation
 
-Install via Package Manager:
+Install via the .NET CLI:
 
 ```sh
-Install-Package passninja.dll -Version 1.0.0
+dotnet add package passninja
+```
+
+Or via the Package Manager Console:
+
+```sh
+Install-Package passninja
 ```
 
 # Usage
