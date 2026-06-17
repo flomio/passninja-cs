@@ -8,7 +8,7 @@
 
     <!-- NuGet package metadata -->
     <PackageId>passninja</PackageId>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <Authors>PassNinja</Authors>
     <Company>PassNinja</Company>
     <Description>A PassNinja API helper library for C# — create and manage mobile wallet NFC passes (Apple Wallet and Google Wallet).</Description>
@@ -16,11 +16,13 @@
     <RepositoryUrl>https://github.com/flomio/passninja-cs</RepositoryUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageIcon>icon.png</PackageIcon>
     <PackageTags>passninja;nfc;wallet;apple-wallet;google-wallet;passes</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
     <None Include="..\README.md" Pack="true" PackagePath="\" />
+    <None Include="icon.png" Pack="true" PackagePath="\" />
   </ItemGroup>
 
   <ItemGroup>
